@@ -42,7 +42,8 @@ body {
 
 /* --- Happy Birthday typing animation --- */
 .birthday-text {
-  font-size: 3rem;
+  font-size: 8vw; /* 8% of the viewport width */
+  letter-spacing: 0.3vw;
   color: #ffffff;
   letter-spacing: 4px;
   text-shadow: 0 0 10px #8ab4ff;
@@ -53,6 +54,7 @@ body {
   position: relative;
   top: -60px;
   margin-bottom: 160px;
+
 
   /* Two animations: typing + cursor blink */
   animation:
