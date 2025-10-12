@@ -42,7 +42,7 @@ body {
 
 /* --- Happy Birthday typing animation --- */
 .birthday-text {
-  font-size: 3 rem;
+  font-size: 3rem;
   color: #ffffff;
   letter-spacing: 4px;
   text-shadow: 0 0 10px #8ab4ff;
@@ -54,17 +54,19 @@ body {
   top: -60px;
   margin-bottom: 160px;
 
+
+  /* Two animations: typing + cursor blink */
+  animation:
+    appearText 5s steps(14) infinite,
+    blinkCursor 0.7s step-end infinite;
+}
+
   /* Phones (max-width 600px) */
 @media screen and (max-width: 600px) {
   .birthday-text {
     font-size: 1.8rem; 
     letter-spacing: 2px;
   }
-
-  /* Two animations: typing + cursor blink */
-  animation:
-    appearText 5s steps(14) infinite,
-    blinkCursor 0.7s step-end infinite;
 }
 
 /* Typing and reset loop */
