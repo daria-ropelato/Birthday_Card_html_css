@@ -1,0 +1,266 @@
+/* Base styling */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #a066ff, #2c2b80);
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+/* Happy Birthday text */
+
+
+/*.birthday-text {
+  font-size: 3rem;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px #8ab4ff;
+  animation: appearText 4s steps(14) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(255,255,255,0.8);
+  width: 15ch;
+  position: relative;
+  top: -60px;
+  margin-bottom: 180px;
+}
+
+@keyframes appearText {
+  0% { width: 0; }
+  50% { width: 15ch; }
+  90% { width: 15ch; opacity: 1; }
+  100% { width: 0; opacity: 0; }
+}*/
+
+/* --- Happy Birthday typing animation --- */
+.birthday-text {
+  font-size: 3rem;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px #8ab4ff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.8); /* cursor */
+  width: 15ch; /* number of visible characters */
+  position: relative;
+  top: -60px;
+  margin-bottom: 160px;
+
+  /* Two animations: typing + cursor blink */
+  animation:
+    appearText 5s steps(14) infinite,
+    blinkCursor 0.7s step-end infinite;
+}
+
+/* Typing and reset loop */
+@keyframes appearText {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 15ch;
+  }
+  90% {
+    width: 15ch;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+/* Cursor blinking effect */
+@keyframes blinkCursor {
+  from {
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+
+
+/* Cake styling */
+.cake {
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.layer {
+  width: 220px;
+  border-radius: 15px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.bottom {
+  height: 70px;
+  background: linear-gradient(to right, #4a47a3, #5f9aff);
+}
+
+.middle {
+  height: 60px;
+  background: linear-gradient(to right, #6654c1, #7aa8ff);
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+.top {
+  height: 50px;
+  background: linear-gradient(to right, #7f6bf3, #9ab8ff);
+  position: absolute;
+  top: -90px;
+  left: 0;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+/* Candles */
+.candles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+}
+
+.candle {
+  width: 10px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.flame {
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(ellipse at center, #ffdb4d, #ff8c00);
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 1px;
+  animation: flicker 0.25s infinite alternate;
+  box-shadow: 0 0 8px 2px #ffd966;
+}
+
+@keyframes flicker {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(1.3); opacity: 0.8; }
+}
+
+/* Car moving around cake */
+.car {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  top: -25px;
+  left: -15px;
+  transform-origin: 20px 80px;
+  animation: driveStraight 8s linear infinite;
+}
+
+.car-body {
+  width: 40px;
+  height: 15px;
+  background: #4fc3f7;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+}
+
+.car-body::before {
+  content: "";
+  width: 25px;
+  height: 10px;
+  background: #81d4fa;
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  border-radius: 5px 5px 0 0;
+}
+
+.wheel {
+  width: 8px;
+  height: 8px;
+  background: #222;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+}
+
+.front { right: 4px; }
+.back { left: 4px; }
+
+/*@keyframes driveCircle {
+  from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(70px) rotate(-360deg); }
+}*/
+
+@keyframes driveStraight {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(200px) scaleX(1); }   /* goes right */
+  51%  { transform: translateX(200px) scaleX(-1); }  /* flip to face left */
+  100% { transform: translateX(0) scaleX(-1); }      /* return left */
+}
+
+
+/* Confetti + banknotes */
+.confetti, .confetti2, .confetti3 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #a3d1ff;
+  top: 0;
+  left: 50%;
+  opacity: 0.7;
+  border-radius: 2px;
+  animation: fall 8s linear infinite;
+}
+
+.confetti2 {
+  background: #d6b3ff;
+  animation-delay: 3s;
+  left: 30%;
+  width: 12px;
+  height: 6px;
+}
+
+.confetti3 {
+  background: #b8a9ff;
+  animation-delay: 5s;
+  left: 70%;
+  width: 8px;
+  height: 12px;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 0.9; }
+  50% { transform: translateY(60vh) rotate(180deg); opacity: 0.6; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0.3; }
+}
+
+
+.cake {
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.car {
+  z-index: 1; /* car below cake */
+}
