@@ -43,6 +43,8 @@ It’s designed to be a digital greeting card that you can share via a simple li
 
 ## ✨ Demo
 
+https://github.com/user-attachments/assets/b09147fc-3afe-4370-8cb6-3428a251970a
+
 You can see the live animation here:  
 👉 **[View on GitHub Pages](https://daria-ropelato.github.io/Birthday_Card_html_css/)**
 
