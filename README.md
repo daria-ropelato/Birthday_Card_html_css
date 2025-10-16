@@ -1,7 +1,6 @@
 # ✨ Animated Birthday Card (HTML + CSS)
 
-A cheerful animated **birthday card** created with pure HTML and CSS.  
-It features a colorful three-layered cake, flickering candles, a small car driving under the cake, and the words **“Happy Birthday”** appearing letter by letter — all in a blue and purple color palette.
+A cheerful animated **birthday card** created with pure HTML and CSS. It features a colorful three-layered cake, flickering candles, a small car driving under the cake, and the words **“Happy Birthday”** appearing letter by letter — all in a blue and purple color palette.
 
 ---
 
@@ -51,12 +50,6 @@ You can see the live animation here:
 ---
 
 ## ✨ Potential Applications
-
-- Digital greeting cards or **e-cards**  
-- CSS animation portfolio projects  
-- Teaching **animation timing and transforms**  
-- Web-based celebration pages or interactive invites
-- This project demonstrates creative **UI animation and layout techniques** that can be reused in many areas of web design and development:
 
 - **Digital greeting cards** and e-invitations  
 - **Interactive website components** (hero sections, landing pages, festive banners)  
