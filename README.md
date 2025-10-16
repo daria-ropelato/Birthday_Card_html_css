@@ -57,11 +57,3 @@ You can see the live animation here:
 - Teaching **animation timing and transforms**  
 - Web-based celebration pages or interactive invites  
 
----
-
-## 📂 Repository Structure
-
-📁 birthday-card/
-┣ 📄 index.html
-┣ 📄 style.css
-┗ 📄 README.md
