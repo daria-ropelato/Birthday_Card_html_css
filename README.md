@@ -11,6 +11,15 @@ It’s designed to be a digital greeting card that you can share via a simple li
 
 ---
 
+## ✨ Demo
+
+https://github.com/user-attachments/assets/b09147fc-3afe-4370-8cb6-3428a251970a
+
+You can see the live animation here:  
+👉 **[View on GitHub Pages](https://daria-ropelato.github.io/Birthday_Card_html_css/)**
+
+---
+
 ## ✨ Purpose
 
 - To practice advanced **CSS animation techniques**  
@@ -37,15 +46,6 @@ It’s designed to be a digital greeting card that you can share via a simple li
    - The text typing and cursor blinking  
    - Confetti and background motion  
 3. The project runs entirely in the browser — no JavaScript required.  
-
----
-
-## ✨ Demo
-
-https://github.com/user-attachments/assets/b09147fc-3afe-4370-8cb6-3428a251970a
-
-You can see the live animation here:  
-👉 **[View on GitHub Pages](https://daria-ropelato.github.io/Birthday_Card_html_css/)**
 
 ---
 
